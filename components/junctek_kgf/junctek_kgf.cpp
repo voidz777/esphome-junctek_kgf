@@ -286,15 +286,15 @@ void JuncTekKGF::loop()
     write_str(buffer);
   }
 
-  const unsigned long start_time = esphome::millis();
- 
-  if (!this->last_stats_ || ((*this->last_stats_ + this->update_stats_interval_) < start_time))
-  {
-    if (readline())
-    {      
-      handle_line();
-    }
-  }
+//  const unsigned long start_time = esphome::millis();
+// 
+//  if (!this->last_stats_ || ((*this->last_stats_ + this->update_stats_interval_) < start_time))
+//  {
+//    if (readline())
+//    {      
+//      handle_line();
+//    }
+//  }
 }
 
 float JuncTekKGF::get_setup_priority() const
